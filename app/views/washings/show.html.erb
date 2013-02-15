@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Automovel:</b>
+  <%= @washing.automovel_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @washing.type_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_washing_path(@washing) %> |
+<%= link_to 'Back', washings_path %>

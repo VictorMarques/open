@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  tipo: false
+  born_on: 2013-02-15
+
+two:
+  nome: MyString
+  tipo: false
+  born_on: 2013-02-15

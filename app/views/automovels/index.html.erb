@@ -1,0 +1,27 @@
+<h1>Lagem de automovel</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Tipo</th>
+    <th>Data de entrega</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @automovels.each do |automovel| %>
+  <tr>
+    <td><%= automovel.nome %></td>
+    <td><%= automovel.tipo %></td>
+    <td><%= automovel.born_on %></td>
+    <td><%= link_to 'Show', automovel %></td>
+    <td><%= link_to 'Edit', edit_automovel_path(automovel) %></td>
+    <td><%= link_to 'Destroy', automovel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Automovel', new_automovel_path %>

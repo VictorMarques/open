@@ -1,0 +1,2 @@
+module TipoLavagemsHelper
+end

@@ -1,0 +1,10 @@
+<%= semantic_form_for @washing do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :automovel_id %>
+    <%= f.input :type_id %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

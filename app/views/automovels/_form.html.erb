@@ -1,0 +1,11 @@
+<%= semantic_form_for @automovel do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :nome, :label => "Nome do automóvel" %>
+    <%= f.input :born_on, :label => "Data de Entrega", :start_year => 2000 %>
+    <%= f.input :tipo, :as => :radio, :label => "Tipo",
+     :collection => [["Moto", false], ["Carro", true]] %>
+    <%= f.input :types %>
+  <% end %>
+
+  <%= f.button %>
+<% end %>

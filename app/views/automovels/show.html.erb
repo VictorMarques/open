@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @automovel.nome %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @automovel.tipo %>
+</p>
+
+<p>
+  <b>Born on:</b>
+  <%= @automovel.born_on %>
+</p>
+
+
+<%= link_to 'Edit', edit_automovel_path(@automovel) %> |
+<%= link_to 'Back', automovels_path %>
